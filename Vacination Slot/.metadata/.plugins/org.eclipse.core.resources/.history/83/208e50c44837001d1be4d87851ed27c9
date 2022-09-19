@@ -1,0 +1,19 @@
+package com.example.CitizenService.Repositories;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.CitizenService.Entity.Citizen;
+	
+	
+	public interface CitizenRepo extends JpaRepository<Citizen, Integer> {
+		
+		
+		//public List<Citizen> findbyVaccinationId(Integer id) ;// return list of citizen under a particular vaccination center
+		
+
+	}
+
+
+

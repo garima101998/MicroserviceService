@@ -1,0 +1,9 @@
+package com.example.VaccinationCenter.Entities;
+
+public class Citizen {
+	
+	int id;
+	String name;
+	
+
+}

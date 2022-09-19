@@ -1,0 +1,28 @@
+package com.example.VaccinationCenter.Controlller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.VaccinationCenter.Entity.VaccinationCenter;
+import com.example.VaccinationCenter.Service.VaccinationService;
+
+@RestController
+@RequestMapping("/vaccinationcenter")
+public class VaccinationCenterController {
+	
+	
+	@Autowired
+	private VaccinationService vs; 
+	
+	    @PostMapping("/add")
+		public void addVaccinationCenter(@RequestBody VaccinationCenter c)
+		{
+	    	System.out.print(c.getId()+" "+c.getCenterAddress()+" "+c.getCenterName());
+			
+	     vs.addVaccinationCenter(c);
+		}
+
+}

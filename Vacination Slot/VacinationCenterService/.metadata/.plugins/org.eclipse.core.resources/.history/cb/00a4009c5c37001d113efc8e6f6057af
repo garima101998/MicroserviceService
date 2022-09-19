@@ -1,0 +1,36 @@
+package com.example.VaccinationCenter.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+public class Citizen {
+	
+
+
+	
+	private int id;
+	private String  name;
+	private int vaccinationId;
+	
+	public Citizen() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Citizen(int id, String name, int vaccinationId) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.vaccinationId = vaccinationId;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+
+}
+}

@@ -1,0 +1,11 @@
+package com.example.CitizenService.Entity;
+
+import javax.persistence.Id;
+
+
+
+@Entity
+public class Entity {
+	
+
+}

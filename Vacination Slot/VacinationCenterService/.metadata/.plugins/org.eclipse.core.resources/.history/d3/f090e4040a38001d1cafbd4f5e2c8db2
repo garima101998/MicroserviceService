@@ -1,0 +1,27 @@
+package com.example.VaccinationCenter.Entities;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+@NoArgsConstructor
+@AllArgsConstructor
+public class RequiredResponse {
+	
+	private int id;
+	private List<Citizen> c;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public List<Citizen> getC() {
+		return c;
+	}
+	public void setC(List<Citizen> c) {
+		this.c = c;
+	}
+	
+
+}

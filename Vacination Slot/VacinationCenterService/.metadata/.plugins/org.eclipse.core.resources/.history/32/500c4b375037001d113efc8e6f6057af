@@ -1,0 +1,5 @@
+package com.example.VaccinationCenter.Repository;
+
+public interface vaccinationRepo {
+
+}

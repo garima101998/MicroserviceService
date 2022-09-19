@@ -1,0 +1,11 @@
+package com.example.VaccinationCenter.Entities;
+
+import java.util.List;
+
+public class RequiredResponse {
+	
+	private int id;
+	private List<Citizen> c;
+	
+
+}

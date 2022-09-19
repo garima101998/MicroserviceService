@@ -1,0 +1,23 @@
+package com.example.VaccinationCenter.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.VaccinationCenter.Entity.VaccinationCenter;
+import com.example.VaccinationCenter.Repository.vaccinationRepo;
+
+
+
+@Service
+public class VaccinationService {
+	
+    @Autowired
+	private vaccinationRepo vr;
+    
+	public void addVaccinationCenter(VaccinationCenter c)
+	{
+		
+	vr.save(c);
+
+}
+}

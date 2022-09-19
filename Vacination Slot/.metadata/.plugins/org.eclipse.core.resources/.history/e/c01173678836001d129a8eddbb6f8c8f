@@ -1,0 +1,28 @@
+package com.example.CitizenService.Entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
+public class User {
+	
+	
+	@Id
+	int id;
+
+	public User(int id) {
+		super();
+		this.id = id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+
+}
